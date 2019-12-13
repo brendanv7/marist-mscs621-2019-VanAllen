@@ -1,1 +1,1 @@
-# marist-mscs621-2019-VanAllen
+Marist Dictionary - a simple Python Flask app utilizing Redis
