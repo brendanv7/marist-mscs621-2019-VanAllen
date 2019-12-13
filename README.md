@@ -73,3 +73,13 @@ The application can now be accessed at the `route` specified in `manifest.yml`. 
 ## Architecture
 ![diagram](https://github.com/brendanv7/marist-mscs621-2019-VanAllen/blob/master/static/images/diagram.png)
 
+## Application Structure
+`docker-compose.yml` - Config file for `docker-compose`, telling it to create images for Redis and the application.
+
+`manifest.yml` - Controls how the app will be deployed and specifies memory and other services like Redis that are needed to be bound to it.
+
+`requirements.txt` - External python packages needed to run the application.
+
+`runtime.txt` - Specifies python version as 3.6.
+
+`server.py` - Application script, implemented as a simple Flask application. The routes are defined in the application using the @app.route() calls.
