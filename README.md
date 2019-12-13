@@ -71,3 +71,5 @@ You are now ready to deploy the application. Push the app to the IBM Cloud:
 The application can now be accessed at the `route` specified in `manifest.yml`. Unless you decided to change this, it should be MaristDictionary.mybluemix.net.
 
 ## Architecture
+![diagram](https://github.com/brendanv7/marist-mscs621-2019-VanAllen/blob/master/static/images/diagram.png)
+
