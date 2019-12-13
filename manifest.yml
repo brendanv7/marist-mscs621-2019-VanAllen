@@ -1,0 +1,8 @@
+---
+applications:
+- name:    MaristDictionary
+  routes:
+  - route: MaristDictionary.mybluemix.net
+  memory:  128M
+  services:
+    - MaristMarket-Redis
