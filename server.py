@@ -1,4 +1,5 @@
 import os
+
 from urllib.parse import urlparse
 import json
 
@@ -9,7 +10,7 @@ from flask import request
 import redis
 
 app = Flask(__name__)
-port = int(os.getenv('PORT', 8000))
+port = int(os.getenv('PORT', 5000))
 
 if 'VCAP_SERVICES' in os.environ:
     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
