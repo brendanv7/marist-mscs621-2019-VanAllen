@@ -82,4 +82,4 @@ The application can now be accessed at the `route` specified in `manifest.yml`. 
 
 `runtime.txt` - Specifies python version as 3.6.
 
-`server.py` - Application script, implemented as a simple Flask application. The routes are defined in the application using the @app.route() calls.
+`server.py` - Application script, implemented as a simple Flask application.
