@@ -1,5 +1,4 @@
-# Marist Dictionary - A simple Python Flask app utilizing Redis
------------------------------------------------------------------------------------------------
+# Marist Dictionary - A simple Python Flask app using Redis
 This application serves as a community dictionary for Marist students. This dictionary is meant to hold the lingo that is unique to the Marist student population. It is based slightly off of [sample_microserivce](https://github.com/jinho10/marist-mscs621-2019/tree/master/unit-4/sample-microservice).
 
 The code uses the Flask microframework for web requests and Redis as a database for storing hashes.
@@ -69,6 +68,6 @@ You are now ready to deploy the application. Push the app to the IBM Cloud:
 ```bash
     $ ibmcloud cf push
 ```
-The application can now be accessed at the `route` specified in `manifest.yml`. Unless you decided to change this, it should be [MaristDictionary.mybluemix.net].
+The application can now be accessed at the `route` specified in `manifest.yml`. Unless you decided to change this, it should be MaristDictionary.mybluemix.net.
 
 ## Architecture
