@@ -8,6 +8,8 @@ When a user loads the site, they are given a form in which they can add words to
 
 The application can be deployed on any host as long as it has a docker engine and docker-compose installed.
 
-The application can also be deployed to IBM Cloud using the IBM Cloud cli tool.
+The application can also be deployed to IBM Cloud using the IBM Cloud CLI tool.
 
 ## Click [here](http://maristdictionary.mybluemix.net/) to access the application.
+
+# Manual Deployment
