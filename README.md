@@ -1,1 +1,2 @@
-Marist Dictionary - a simple Python Flask app utilizing Redis
+Marist Dictionary - A simple Python Flask app utililizing Redis
+-----------------------------------------------------------------------------------------------
