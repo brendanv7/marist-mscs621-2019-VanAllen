@@ -33,7 +33,9 @@ When you are done, you can use the following command to remove the containers:
 ```
     
 ## IBM Cloud Deployment
-This requires a provisioned [IBM Cloud Databases for Redis service](https://www.ibm.com/cloud/databases-for-redis)
+This requires a provisioned [IBM Cloud Databases for Redis](https://www.ibm.com/cloud/databases-for-redis) service.
+
+Open the `manifest.yml` file from the root directory of the project. Replace `MaristMarket-Redis` in `services` with the name of your Redis service.
 
 [Download and install the IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/bluemix_cli?topic=cloud-cli-install-ibmcloud-cli)
 
@@ -42,3 +44,31 @@ Use the CLI to login to IBM Cloud:
     $ ibmcloud login
 ```
 
+Set your target to the IBM Cloud Cloud Foundry:
+```bash
+    $ ibmcloud target --cf
+```
+Set your options.
+
+Create an alias for your Redis service
+```bash
+    $ ibmcloud resource service-alias-create <alias-name> --instance-name <instance-name>
+```
+
+Download the code:
+```bash
+    $ git clone https://github.com/brendanv7/marist-mscs621-2019-VanAllen.git
+    $ cd marist-mscs621-2019-VanAllen
+```
+
+Go to the IBM Cloud dashboard, find your Redis service, and save its TLS certificate to your computer.
+
+Open `server.py` and update the value of `ssl_ca_certs` to the location of your TLS certificate.
+
+You are now ready to deploy the application. Push the app to the IBM Cloud:
+```bash
+    $ ibmcloud cf push
+```
+The application can now be accessed at the `route` specified in `manifest.yml`. Unless you decided to change this, it should be [MaristDictionary.mybluemix.net].
+
+## Architecture
